@@ -112,10 +112,10 @@
                         document.getElementById('searchIdMessage').textContent = "Bad Request. Please provide a valid ID.";
                     } else if (responseData.status === 500) {
                         document.getElementById('searchIdMessage').textContent = "Internal Server Error. Please try again later.";
-                    } else if (responseData.status === 202) {
+                    } else if (responseData.status === 404) {
                         document.getElementById('searchIdMessage').textContent = "The requested record was not found.";
                     } else {
-                        document.getElementById('searchIdMessage').textContent = "Something went wrong, please try again" + responseData.status ;
+                        document.getElementById('searchIdMessage').textContent = "Something went wrong, please try again";
                     }
                     return;
                 }
