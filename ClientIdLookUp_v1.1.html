@@ -115,7 +115,7 @@
                     } else if (responseData.status === 202) {
                         document.getElementById('searchIdMessage').textContent = "The requested record was not found.";
                     } else {
-                        document.getElementById('searchIdMessage').textContent = "Something went wrong, please try again";
+                        document.getElementById('searchIdMessage').textContent = "Something went wrong, please try again" + responseData.status ;
                     }
                     return;
                 }
